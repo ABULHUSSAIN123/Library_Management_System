@@ -1,2 +1,4 @@
 # library-mgmt
-Test
+
+
+Sample library management application
