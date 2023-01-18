@@ -469,7 +469,8 @@ issue book -->
         for (i = 0; i < x.length; i++) {
             x[i].style.display = "none";  
         }
-        document.getElementById(portion).style.display = "block";  
+        document.getElementById(portion).style.display = "block"; 
+        //ishojvoihdi 
         }
         </script>
     </body>
