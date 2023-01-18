@@ -470,7 +470,6 @@ issue book -->
             x[i].style.display = "none";  
         }
         document.getElementById(portion).style.display = "block"; 
-        //ishojvoihdi 
         }
         </script>
     </body>
