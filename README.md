@@ -1,4 +1,4 @@
-# library-mgmt
+# library-management
 
 
 Sample library management application
