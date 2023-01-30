@@ -15,6 +15,7 @@
         background-size: cover;
         background: url(background.jpg);
         background-size: 100%;
+        background-repeat: no-repeat;
         
     }
 
