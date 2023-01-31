@@ -11,11 +11,17 @@
     </head>
     <style>
 
+        #side_bar{
+            background-color: whitesmoke;
+            padding: 50px;
+            width: 300px;
+            height: 450px
+        }
+
     body{
         background-size: cover;
         background: url(background.jpg);
         background-size: 100%;
-        background-repeat: no-repeat;
         
     }
 
@@ -40,7 +46,68 @@
 }
 
     </style>
-    <body >
+    <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.php">Library Management System(LMS)</a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="nav-item">
+                    <a class="nav-link" href="admin.php">Admin Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="student.php">student Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.php">Register Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav><br>
+    <span><marquee><h3>This is Library Management System. Library Opens at 8:00 AM and close at 8:00 PM</h3></marquee></span><br><br>
+    <div class="row">
+        <div class="col-md-4" id="side_bar">
+            <h5>Library Timing</h5>
+            <ul>
+                <li>Opening Timing: 8:00 AM</li>
+                <li>Closing Timing: 8:00 PM</li>
+                <li>(Sunday Off)</li>
+            </ul>
+            <h5>What We Provide?</h5>
+            <ul>
+                <li>Full Furniture</li>
+                <li>Free Wi-Fi</li>
+                <li>News Papers</li>
+                <li>Discussion Room</li>
+                <li>Water</li>
+                <li>Peacefull Environment</li>
+            </ul>
+        </div>
+        <div class="col-md-8" id="main_content">
+        <center><h3>User Registration Form</h3></center>
+        <form action="register.php" method="post">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" name="name" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="name">Email ID:</label>
+                <input type="text" name="email" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="name">Password:</label>
+                <input type="password" name="password" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="name">Type:</label>
+                <input type="text" name="type" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Register</button>
+        </form>
+    </div>
+    </div>
 
 <?php
  $emailmsg="";
@@ -72,58 +139,6 @@ if(!empty($_REQUEST['msg'])){
  }
 
  ?>
-
-
-
-<div class="container login-container">
-<div class="row"><h4><?php echo $msg?></h4></div>
-            <div class="row">
- 
-                <div class="col-md-9 login-form-3">
-                    <h3>Admin Login</h3>
-                    <form action="loginadmin_server_page.php" method="get">
-                        <div class="form-group">
-                            <input type="text" class="form-control" name="login_email" placeholder="Your Email *" value="" />
-                        </div>
-                        <Label style="color:red">*<?php echo $ademailmsg?></label>
-                        <div class="form-group">
-                            <input type="password" class="form-control" name="login_pasword"  placeholder="Your Password *" value="" />
-                        </div>
-                        <Label style="color:red">*<?php echo $adpasdmsg?></label>
-                        <div class="form-group">
-                            <input type="submit" class="btnSubmit" value="Login" />
-                        </div>
-                        <!-- <div class="form-group">
-
-                            <a href="#" class="ForgetPwd" value="Login">Forget Password?</a>
-                        </div> -->
-                    </form>
-                </div>
-                <div class="col-md-3 login-form-1">
-                    <h3>Student Login</h3>
-                    <form action="login_server_page.php" method="get">
-                        <div class="form-group">
-                            <input type="text" class="form-control" name="login_email" placeholder="Your Email *" value="" />
-                        </div>
-                        <Label style="color:red">*<?php echo $emailmsg?></label>
-                        <div class="form-group">
-                            <input type="password" class="form-control" name="login_pasword"  placeholder="Your Password *" value="" />
-                        </div>
-                        <Label style="color:red">*<?php echo $pasdmsg?></label>
-                        <div class="form-group">
-                            <input type="submit" class="btnSubmit" value="Login" />
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-
-
-    
-        
-
-
-
         <script src="" async defer></script>
     </body>
 </html>
