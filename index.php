@@ -79,7 +79,7 @@ if(!empty($_REQUEST['msg'])){
 <div class="row"><h4><?php echo $msg?></h4></div>
             <div class="row">
  
-                <div class="col-md-6 login-form-3">
+                <div class="col-md-9 login-form-3">
                     <h3>Admin Login</h3>
                     <form action="loginadmin_server_page.php" method="get">
                         <div class="form-group">
@@ -99,7 +99,7 @@ if(!empty($_REQUEST['msg'])){
                         </div> -->
                     </form>
                 </div>
-                <div class="col-md-6 login-form-1">
+                <div class="col-md-3 login-form-1">
                     <h3>Student Login</h3>
                     <form action="login_server_page.php" method="get">
                         <div class="form-group">
