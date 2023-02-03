@@ -18,13 +18,6 @@
             height: 450px
         }
 
-    body{
-        background-size: cover;
-        background: url(background.jpg);
-        background-size: 100%;
-        
-    }
-
     .login-form-3 .btnSubmit {
     font-weight: 600;
     color: #0062cc;
@@ -85,7 +78,7 @@
                 <li>Peacefull Environment</li>
             </ul>
         </div>
-        <div class="col-md-8" id="main_content">
+        <div class="col-md-4" id="main_content">
         <center><h3>User Registration Form</h3></center>
         <form action="register.php" method="post">
             <div class="form-group">
